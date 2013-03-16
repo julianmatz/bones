@@ -1,6 +1,6 @@
 <?php
 /*
-1. library/bones.php
+1. library/includes/bones.php
   - head cleanup (remove rsd, uri links, junk css, ect)
 	- enqueueing scripts & styles
 	- theme support functions
@@ -14,14 +14,14 @@
 */
 require_once('includes/bones.php'); // if you remove this, bones will break
 /*
-2. library/custom-post-type.php
+2. library/includes/custom-post-type.php
 	- an example custom post type
 	- example custom taxonomy (like categories)
 	- example custom taxonomy (like tags)
 */
 require_once('includes/custom-post-type.php'); // you can disable this if you like
 /*
-3. library/admin.php
+3. library/includes/admin.php
 	- removing some default WordPress dashboard widgets
 	- an example custom dashboard widget
 	- adding custom login css
@@ -33,3 +33,5 @@ require_once('includes/custom-post-type.php'); // you can disable this if you li
 	- adding support for other languages
 */
 // require_once('library/translation/translation.php'); // this comes turned off by default
+
+require_once('includes/cleanup.php'); // Some cleanup functions
