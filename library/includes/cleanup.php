@@ -28,7 +28,7 @@ function _oembed_dataparse( $return, $data, $url )
 {
 	if ( $data->provider_name === 'YouTube' )
 	{
-		$return = '<iframe style="width: ' . $data->width . 'px; height: ' . $data->height . 'px; border: none;" src="http://www.youtube.com/embed/qTXTDqvPnRk?feature=oembed"></iframe>';
+		$return = '<iframe style="width: ' . $data->width . 'px; height: ' . $data->height . 'px; border: none;" src="' . $url . '"></iframe>';
 	}
 	return $return;
 }
