@@ -2,6 +2,8 @@
 
 namespace cleanup;
 
+// More cleanup functions to follow...
+
 // Filters
 add_filter( 'embed_oembed_html', '\cleanup\_embed_wrap', 10, 4 );
 add_filter( 'embed_googlevideo', '\cleanup\_embed_wrap', 10, 2 );
