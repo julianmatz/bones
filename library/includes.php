@@ -32,6 +32,6 @@ require_once('includes/custom-post-type.php'); // you can disable this if you li
 4. library/translation/translation.php
 	- adding support for other languages
 */
-// require_once('library/translation/translation.php'); // this comes turned off by default
+// require_once('translation/translation.php'); // this comes turned off by default
 
 require_once('includes/cleanup.php'); // Some cleanup functions
