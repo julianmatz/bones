@@ -28,6 +28,12 @@ function _oembed_dataparse( $return, $data, $url )
 {
 	if ( $data->provider_name === 'YouTube' )
 	{
+		if ( strpos( $url, 'oembed' ) === false )
+		{
+			$return = str_replace( ' allowfullscreen', '', $return );
+			$xml = simplexml_load_string( $return );
+			$url = (string)$xml->attributes()->src;
+		}
 		$return = '<iframe style="width: ' . $data->width . 'px; height: ' . $data->height . 'px; border: none;" src="' . $url . '"></iframe>';
 	}
 	return $return;
